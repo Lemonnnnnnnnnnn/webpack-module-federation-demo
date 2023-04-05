@@ -1,0 +1,14 @@
+{
+	"devDependencies": {
+		"lerna": "^6.6.1"
+	},
+	"name": "webpack-module-federation-demo",
+	"scripts": {
+		"start": "lerna run serve --scope ui-lib --scope app --parallel",
+		"bootstrap": "lerna bootstrap --hoist",
+		"clean": "lerna clean"
+	},
+	"workspaces": [
+		"packages/*"
+	]
+}
